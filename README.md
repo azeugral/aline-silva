@@ -4,12 +4,23 @@ Site da Dra. Aline R. Silva ([@alinersilva.adv](https://www.instagram.com/aliner
 
 Prévia: https://azeugral.github.io/aline-silva/ (com `noindex` e `robots.txt` bloqueando até ter domínio).
 
-## Identidade (v1, 12/10/2026)
+## Identidade
 
-Tirada do retrato dela e das referências de escritórios premium (Mishcon de Reya, Kingsley Napley, Pinheiro Neto).
+Duas versões no mesmo código; as cores e as fontes são variáveis no topo do `site.css`.
 
-- **Cores:** grafite `#141216` (fundo do estúdio da foto), oliva `#3b4428` (o blazer), latão `#c0a06a` (os brincos), papel `#ebe6db` e marfim `#f2eee6`.
-- **Fontes:** Bodoni Moda nos títulos (a serifa de alto contraste dos escritórios de referência), IBM Plex Sans no texto e IBM Plex Mono nas legendas e citações.
+### v2 · Tinta & Cobre (padrão, 12/10/2026)
+
+- **Cores:** azul-tinta `#0d1422` (fundo escuro), azul-noite `#1c2a45` (seção de destaque), pergaminho `#ece5d8`, marfim `#f3eee4` e cobre `#c48558` (`#94532c` sobre o claro).
+- **Fontes:** Imbue nos títulos, uma Didone condensada com eixo óptico, formal e editorial. Os títulos usam `--escala` (1,18) e `--escala-xl` (1,32), porque a fonte é estreita. Instrument Sans no texto e JetBrains Mono nas legendas.
+
+### v1 · Grafite, Oliva & Latão (`?tema=v1`)
+
+Tirada do retrato dela: grafite `#141216`, oliva `#3b4428` (o blazer), latão `#c0a06a` (os brincos) e papel `#ebe6db`. Bodoni Moda + IBM Plex Sans/Mono. As fontes da v1 só carregam com `?tema=v1`.
+
+Para comparar: https://azeugral.github.io/aline-silva/ e https://azeugral.github.io/aline-silva/?tema=v1
+
+### Comum às duas
+
 - **Detalhes:** monograma AS em moldura dupla; cada área termina com a base legal em mono (`§ STJ, Súmula 479`), como nota de rodapé de petição; losangos de latão nas listas e nas etapas.
 - **Botões:** retos, rótulo + célula da seta; no hover o fundo desliza da esquerda (latão no claro, marfim no contorno).
 - **Movimento:** curva `cubic-bezier(.16,.84,.32,1)` do LRGZ. Abertura com o título subindo por máscara linha a linha, a foto revelada de baixo para cima e o contador dos 23 anos; revelação ao rolar, índice fixo das áreas com marcador que acompanha a seção, linha das etapas que se desenha e dúvidas com altura animada. Tudo respeita `prefers-reduced-motion`.
